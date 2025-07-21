@@ -96,16 +96,19 @@
     opacity: 0.5;
   }
 }
+
 .item-enter,
 .temp-item-enter {
   max-height: 0;
 }
+
 .item-enter-active,
 .temp-item-enter-active {
   overflow: hidden;
   max-height: 58px;
   transition: max-height 0.3s ease-in-out;
 }
+
 .item-exit,
 .temp-item-exit {
   max-height: 58px;
@@ -116,6 +119,7 @@
   max-height: 0;
   transition: max-height 0.3s ease-in-out;
 }
+
 .temp-item-exit-active {
   transform: translateY(-58px);
 
@@ -126,6 +130,7 @@
   transition: 0.3s ease-in-out;
   transition-property: opacity, max-height, transform;
 }
+
 .has-error .temp-item-exit-active {
   transform: translateY(0);
   overflow: hidden;
